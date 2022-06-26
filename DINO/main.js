@@ -6,22 +6,22 @@ var animation;
 canvas.width = window.innerWidth - 100;
 canvas.height = window.innerHeight - 100;
 
-/*
+
 var cactusImg = new Image();
-cactusImg.src='./png/cactus.png';
+cactusImg.src='png/cactus_s.png';
 
 var dinoImg = new Image();
-dinoImg.src='./png/dino.png';
-*/
+dinoImg.src='png/dino_s.png';
+
 let dino={
     x : 10,
     y : 200,
     width : 50,
     height : 50,
     draw(){
-        //ctx.drawImage(dinoImg, this.x, this.y)
-        ctx.fillStyle = 'green';
-        ctx.fillRect(this.x, this.y, this.width, this.height);
+        //ctx.fillStyle = 'green';
+        //ctx.fillRect(this.x, this.y, this.width, this.height);
+        ctx.drawImage(dinoImg, this.x, this.y)
     }
 }
 
@@ -36,9 +36,9 @@ class Cactus{
         this.height = 50;
     }
     draw(){
-        ctx.fillStyle = 'red';
-        ctx.fillRect(this.x, this.y, this.width, this.height);
-        //ctx.drawImage(cactusImg, this.x, this.y)
+       //ctx.fillStyle = 'red';
+       //ctx.fillRect(this.x, this.y, this.width, this.height);
+        ctx.drawImage(cactusImg, this.x, this.y)
     }
 }
 
